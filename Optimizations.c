@@ -1,0 +1,3 @@
+#define LOOP_ITERATION_1 (VAR_A * 1)
+#define LOOP_ITERATION_2 (VAR_A * 2)
+#define LOOP_ITERATION_3 (VAR_A * 3)
