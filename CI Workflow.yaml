@@ -1,0 +1,19 @@
+# GitHub Actions CI configuration
+name: A-Stream CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up A-Stream
+        run: |
+          ./install_asstream.sh  # Install the language
+      - name: Run tests
+        run: |
+          astream test  # Run all tests
